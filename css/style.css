@@ -1,9 +1,11 @@
+/* ----------------------------------------------------------- RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* overflow: hidden; */
 }
+/* ----------------------------------------------------------- GERAL */
 html, body {
     height: 100%;
     width: 100%;
@@ -14,7 +16,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 /* ----------------------------------------------------------- HEADER */
 header{
     background-color: #0f0f0f;
@@ -28,18 +29,15 @@ header{
 header > nav{
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 100%;
     justify-content: space-around;
-
-    /* border: solid 5px;
-    border-color: red; */
-
 }
 header > nav > a{
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     color: white;
-    padding: 10px;
-    font-size: large;
+    /* padding: 1%; */
     transition: .5s;
 }
 header > nav > a:hover{
@@ -49,16 +47,15 @@ header > nav > a:hover{
 main{
     flex: auto;
 
-    /* border: solid 5px;
-    border-color: red; */
+    border: solid 5px;
+    border-color: red;
+    border-style: dotted;
 
     /* display: flex; */
     /* justify-content: center; */
     /* width: 300%; */
     /* height: 600px; */
 }
-
-
 
 
 
@@ -93,5 +90,4 @@ footer > nav > a:hover{
 .logo{
     width: 30px;
 }
-
 
