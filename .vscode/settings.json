@@ -1,0 +1,8 @@
+{
+    "discord.detailsDebugging": "Debugging {file_name}",
+    "discord.removeDetails": true,
+    "discord.removeLowerDetails": true,
+    "discord.removeRemoteRepository": true,
+    "discord.swapBigAndSmallImage": true,
+    "discord.enabled": true
+}
