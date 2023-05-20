@@ -5,21 +5,33 @@
     box-sizing: border-box;
     overflow: hidden;
 }
+:root{
+    --cor1a: #000000;
+    --cor1b: #000000EE;
+
+    --cor2a: #3E065F;
+    --cor2b: #3E065FDD;
+    
+    --cor3a: #700B97;
+    --cor3b: #700B97CC;
+    
+    --cor4a: #AF07FF;
+    --cor4b: #AF07FFBB;
+}
 /* -------------------------------------------------------- GERAL */
-html, body {
+/* html, body {
     height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
-}
-body {
+} */
+/* body {
     display: flex;
     flex-direction: column;
-}
+} */
 /* -------------------------------------------------------- HEADER */
 header{
-    background: linear-gradient(180deg, #000000EE, #0D0D0DFF);
-    color: #F2EFEBEE;
+    background: linear-gradient(180deg, var(--cor1b)  50%, var(--cor2a));
     display: flex;
     justify-content: center;
     height: 10vh;
@@ -35,13 +47,14 @@ header > nav{
 header > nav > a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    color: white;
+    font-weight: 600;
+    color: var(--cor4a);
     /* padding: 1%; */
     transition: .5s;
 }
 header > nav > a:hover{
-    scale: 1.2;
+    scale: 1.1;
+    color: var(--cor4b);
 }
 /* -------------------------------------------------------- MAIN */
 main{
@@ -55,8 +68,7 @@ main{
 }
 main > section{
     margin: 10vh 0 8vh 0;
-    background: radial-gradient(#404259FF,  #0D0D0DFF 65%);
-    color: #F2EFEBEE;
+    background: radial-gradient( var(--cor4a), var(--cor2a) 65%);
     height: 82vh;
     width: 100vw;
 }
@@ -114,7 +126,7 @@ main > section{
 /* ------------------------------------ #contato{} */
 /* -------------------------------------------------------- FOOTER */
 footer{
-    background: linear-gradient(0deg, #000000EE, #0D0D0DFF);
+    background: linear-gradient(0deg, var(--cor1b) , var(--cor2a));
     height: 8vh;
     display: flex;
     justify-content: center;
