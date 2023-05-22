@@ -102,7 +102,7 @@ main > section{
 }
 #sobre > .apresentacao > ul{
     padding: .5rem;
-    margin: .5rem;
+    /* margin: .5rem; */
     color: white;
     list-style: none;
 }
@@ -112,22 +112,34 @@ main > section{
     color: white;
 }
 /* ------------------------------------ #hobbies{} */
-/* #hobbies{
-    padding: 5vh 0;
+#hobbies{
+    padding: 1rem;
+}
+#hobbies > ul{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Montserrat', sans-serif;
 
+    border-radius: 30px;
+    background-color: var(--cor1c);
+    backdrop-filter: blur(5px);
+}
+#hobbies > ul > li{
+    padding: 3.5rem 0;
+    margin: .5rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--cor5b);
+    border-radius: 20px;
     border: solid 3px;
-    border-color: red;
-} */
-#hobbies > img{
-    width: 100vw;
-    height: 82vh;
-    display: block;
-    margin: auto;
-    
-    /* header=10vh ~ footer=8vh */
-    /* width: 100vw; */
-    /* height: 82vh; */
-    /* margin: 15vh 15vw; */
+    border-color: var(--cor1c);
+    transition: .5s;
+}
+#hobbies > ul > li:hover{
+    background-color: var(--cor1c);
+    color: var(--cor5a);
+    scale: 1.05;
 }
 /* ------------------------------------ CONTATO */ 
 #contato{
@@ -141,7 +153,7 @@ main > section{
     width: 100%;
     height: 100%;
     border-radius: 30px;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
